@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #f2f4f1;
+  color: #17211c;
+}
+
+button, a, input, select {
+  outline-color: #1c6b45;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
