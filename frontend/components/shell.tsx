@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
-import { Bell, LayoutDashboard, Lightbulb, LineChart, MapPinned } from "lucide-react";
+import { Bell, BookOpen, LayoutDashboard, Lightbulb, LineChart, MapPinned } from "lucide-react";
 import { apiGet } from "@/lib/api";
 import { ClockProvider, useClock } from "@/lib/filters";
 import { clockLabel } from "@/lib/format";
@@ -15,6 +15,7 @@ const links = [
   { href: "/analytics", label: "Analytics", icon: LineChart },
   { href: "/alerts", label: "Alerts", icon: Bell },
   { href: "/insights", label: "Insights", icon: Lightbulb },
+  { href: "/docs", label: "Docs", icon: BookOpen },
 ];
 
 function Nav({ openCount }: { openCount: number }) {
